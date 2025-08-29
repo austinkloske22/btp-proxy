@@ -1,0 +1,4 @@
+node_modules/
+default-env.json
+*.log
+.DS_Store

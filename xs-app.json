@@ -1,0 +1,19 @@
+{
+  "welcomeFile": "/",
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "source": "^/sap/opu/odata/(.*)",
+      "target": "/sap/opu/odata/$1",
+      "destination": "SED",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/(.*)",
+      "target": "/$1",
+      "localDir": "public",
+      "authenticationType": "none"
+    }
+  ]
+}

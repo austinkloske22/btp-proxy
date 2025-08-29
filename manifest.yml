@@ -1,0 +1,10 @@
+---
+applications:
+- name: btp-proxy
+  memory: 128M
+  buildpacks:
+    - nodejs_buildpack
+  path: .
+  services:
+    - btp-proxy-dest
+    - btp-proxy-conn
